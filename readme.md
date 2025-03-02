@@ -8,29 +8,34 @@ Este proyecto implementa un formulario de registro web con validaciones y prueba
 - npm (normalmente viene con Node.js)
 
 ## Instalación
-
-1. Clona este repositorio:
-git clone https://github.com/eliasp4/proyecto-cypress-testing/tree/main
-
-2. Navega al directorio del proyecto:
-cd proyecto-cypress-testing
-
-3. Inicializa el proyecto con npm:
-npm init -y
-
-4. Instala las dependencias:
-npm install cypress --save-dev
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/eliasp4/proyecto-cypress-testing.git
+   ```
+2. Navega al directorio del proyecto:  
+   ```bash
+   cd proyecto-cypress-testing
+   ```
+3. Inicializa el proyecto con npm:  
+   ```bash
+   npm init -y
+   ```
+4. Instala las dependencias:  
+   ```bash
+   npm install cypress --save-dev
+   ```
 
 ## Configuración
 
 Asegúrate de que tu `package.json` incluya los siguientes scripts:
 
-json
+```json
 "scripts": {
-"cy:open": "cypress open",
-"cy:run": "cypress run",
-"dev": "webpack serve --mode development"
+  "cy:open": "cypress open",
+  "cy:run": "cypress run",
+  "dev": "webpack serve --mode development"
 }
+```
 
 ## Estructura del Proyecto
 
