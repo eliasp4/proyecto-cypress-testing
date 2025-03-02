@@ -10,7 +10,7 @@ Este proyecto implementa un formulario de registro web con validaciones y prueba
 ## Instalación
 
 1. Clona este repositorio:
-git clone https://github.com/tu-usuario/cypress-e2e-framework.git
+git clone https://github.com/eliasp4/proyecto-cypress-testing/tree/main
 
 2. Navega al directorio del proyecto:
 cd proyecto-cypress-testing
