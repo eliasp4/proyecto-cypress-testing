@@ -36,8 +36,10 @@ json
 
 - `public/index.html`: Formulario de registro HTML
 - `public/confirmacion.html`: Confirmacion de registro HTML
-- `public/js/validation.js`: Lógica de validación del formulario
+- `public/js/funcionalidades_form.js`: Lógica de validación del formulario
+- `public/js/funcionalidades_cn.js`: Lógica de validación de confirmacion
 - `public/css/styles.css`: Estilos del formulario
+- `public/css/styles_cn.css`: Estilos de confirmacion
 - `cypress/e2e/test_formulario.cy.js`: Pruebas de Cypress
 
 ## Ejecución
@@ -50,7 +52,7 @@ npm run dev
 
 npm run cy:open
 
-3. Para ejecutar las pruebas en modo headless:
+3. Para ejecutar las pruebas en modo headless, (Yo las hago desde la interfaz, por lo que me quedo en el punto 2):
 
 npm run cy:run
 
