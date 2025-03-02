@@ -112,9 +112,28 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 
 ## Desafíos y Soluciones
 
-1. **Validación de correo electrónico**: Se implementó un evento 'blur' para asegurar la validación correcta.
-2. **Manejo de alertas en Cypress**: Se utilizaron stubs para simular y verificar las alertas del navegador.
+### 1. Validación de correo electrónico
+**Problema:** Al probar la validación del correo, Cypress detectaba un error en el formato.  
+![Error validación de correo](cypress/screenshost/Imagen6.png)
 
+**Solución:** Se implementó un evento `'blur'` en el campo de correo electrónico dentro del JavaScript del formulario, asegurando que la validación se dispare correctamente cuando el usuario salga del campo.  
+![Validación correcta](cypress/screenshost/Imagen7.png)
+![Validación correcta](cypress/screenshost/Imagen8.png)
+
+### 2. Manejo de alertas en Cypress
+**Problema:** Cypress no detectaba correctamente las alertas del navegador.
+
+**Solución:** Se utilizaron *stubs* para simular y verificar las alertas, permitiendo validar su activación sin necesidad de interacción manual.
+
+### 3. Redirección a la página de confirmación
+**Problema:** La prueba que validaba la redirección tras un registro exitoso fallaba porque Cypress no encontraba el texto `Registro Exitoso!` en la página de confirmación.  
+![Error de redirección](cypress/screenshost/Imagen8.png)
+
+**Solución:** Se modificó el archivo `confirmacion.html`, agregando un `<h1>` con el texto `Registro Exitoso!`. Esto permitió que la validación se ejecutara correctamente.  
+![Redirección funcionando](cypress/screenshost/Imagen9.png)
+![Redirección funcionando](cypress/screenshost/Imagen10.png)
+
+---
 
 ## Capturas de Pantalla
 
