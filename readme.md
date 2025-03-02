@@ -35,6 +35,7 @@ json
 ## Estructura del Proyecto
 
 - `public/index.html`: Formulario de registro HTML
+- `public/confirmacion.html`: Confirmacion de registro HTML
 - `public/js/validation.js`: Lógica de validación del formulario
 - `public/css/styles.css`: Estilos del formulario
 - `cypress/e2e/test_formulario.cy.js`: Pruebas de Cypress
