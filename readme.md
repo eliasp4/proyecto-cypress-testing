@@ -145,7 +145,7 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 
 ## Capturas de Pantalla
 
-[Incluye aquí las capturas de pantalla de los tests pasando en Cypress, ubicadas en `cypress/screenshots`.]
+https://github.com/eliasp4/proyecto-cypress-testing/tree/main/cypress/screenshost
 
 ## Ejecución de Pruebas Individuales
 
