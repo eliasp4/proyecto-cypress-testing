@@ -50,12 +50,14 @@ Asegúrate de que tu `package.json` incluya los siguientes scripts:
 ## Ejecución
 
 1. Para iniciar el servidor de desarrollo:
-
-`npm run dev`
+```bash
+npm run dev
+```
 
 2. Para abrir Cypress y ejecutar las pruebas:
-
-`npm run cy:open`
+ ```bash
+npm run cy:open
+```
 
 Este comando abrirá la interfaz de Cypress, permitiéndote ejecutar y depurar tus pruebas de manera visual.
 
@@ -86,8 +88,9 @@ Una vez que hayas seleccionado el archivo `test_formulario.cy.js`, Cypress comen
 
 3. Para ejecutar las pruebas en modo headless:
 (Yo las hago desde la interfaz, por lo que me quedo en el punto 2)
-
-`npm run cy:run`
+ ```bash
+npm run cy:run
+```
 
 ## Implementación de Validaciones
 
