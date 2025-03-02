@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Registro Exitoso!</h1>
+        <p>Gracias por registrarte. Tu cuenta ha sido creada correctamente.</p>
+        <p>Hemos enviado un correo de confirmación a tu dirección de correo electrónico.</p>
+        
+        <!-- Aquí puedes agregar detalles adicionales si es necesario -->
+        <p>Si tienes alguna pregunta, no dudes en <a href="contacto.html">contactarnos</a>.</p>
+
+        <!-- Botón para regresar a la página principal o inicio -->
+        <button onclick="window.location.href = 'index.html';">Volver al inicio</button>
+    </div>
+</body>
+</html>
