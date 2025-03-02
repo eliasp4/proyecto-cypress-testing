@@ -52,7 +52,8 @@ npm run dev
 
 npm run cy:open
 
-3. Para ejecutar las pruebas en modo headless, (Yo las hago desde la interfaz, por lo que me quedo en el punto 2):
+3. Para ejecutar las pruebas en modo headless:
+(Yo las hago desde la interfaz, por lo que me quedo en el punto 2)
 
 npm run cy:run
 
