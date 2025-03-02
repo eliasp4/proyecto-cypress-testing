@@ -52,6 +52,32 @@ json
 
 `npm run cy:open`
 
+Este comando abrirá la interfaz de Cypress, permitiéndote ejecutar y depurar tus pruebas de manera visual.
+
+**A. Abrir la interfaz de Cypress:**
+
+Ejecuta el comando `npm run cy:open` en tu terminal. Esto abrirá la ventana de Cypress.
+
+![Captura de pantalla de la terminal mostrando la ejecución del comando npm run cy:open](cypress/screenshost/Imagen1.png)
+
+**B. Elegir el tipo de pruebas:**
+
+En la interfaz de Cypress, elige "E2E Testing" para pruebas de extremo a extremo. Luego, selecciona el navegador que deseas utilizar para ejecutar las pruebas, por ejemplo, Edge.
+
+![Captura de pantalla de la interfaz de Cypress mostrando la selección de E2E Testing y el navegador](cypress/screenshost/Imagen2.png)
+
+**C. Seleccionar el archivo de pruebas:**
+
+Dentro de la sección "Specs", verás una lista de todos los archivos de prueba disponibles en tu proyecto. Selecciona el archivo `test_formulario.cy.js` para ejecutar las pruebas de validación del formulario.
+
+![Captura de pantalla de la interfaz de Cypress mostrando la lista de archivos de prueba y la selección de test_formulario.cy.js](cypress/screenshost/Imagen3.png)
+
+**D. Ejecutar las pruebas:**
+
+Una vez que hayas seleccionado el archivo `test_formulario.cy.js`, Cypress comenzará a ejecutar las pruebas automáticamente, mostrando el estado de cada validación en tiempo real.
+
+![Captura de pantalla de Cypress ejecutando las pruebas y mostrando los resultados](cypress/screenshost/Imagen4.png)
+
 3. Para ejecutar las pruebas en modo headless:
 (Yo las hago desde la interfaz, por lo que me quedo en el punto 2)
 
