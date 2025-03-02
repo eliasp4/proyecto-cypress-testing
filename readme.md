@@ -97,4 +97,6 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 
 Para ejecutar una prueba específica:
 
+Como lo hago yo para ejecutar pru
+
 npx cypress run --spec "cypress/e2e/test_formulario.cy.js"
