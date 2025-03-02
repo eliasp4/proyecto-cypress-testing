@@ -377,9 +377,10 @@
         updateSubmitButtonState();
   
         if (isValid) {
-          console.log('Form submitted successfully');
-          alert('Formulario enviado correctamente');
-          window.location.href = 'confirmacion.html'; // Redirigir a la página de confirmación
+            localStorage.setItem("fullName", document.getElementById("fullName").value);
+            localStorage.setItem("email", document.getElementById("email").value);
+            localStorage.setItem("dateOfBirth", document.getElementById("dateOfBirth").value);
+            window.location.href = "confirmacion.html"; // Redirigir a la página de confirmación
         }
       });
   

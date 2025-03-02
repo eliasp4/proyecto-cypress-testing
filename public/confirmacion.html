@@ -21,16 +21,25 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
         }
         h1 {
             color: #4CAF50;
         }
         p {
             font-size: 18px;
-            margin: 20px 0;
+            margin: 15px 0;
+        }
+        .info {
+            text-align: left;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
         }
         button {
             padding: 10px 20px;
+            margin: 10px;
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -45,15 +54,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>¡Registro Exitoso!</h1>
-        <p>Gracias por registrarte. Tu cuenta ha sido creada correctamente.</p>
-        <p>Hemos enviado un correo de confirmación a tu dirección de correo electrónico.</p>
-        
-        <!-- Aquí puedes agregar detalles adicionales si es necesario -->
-        <p>Si tienes alguna pregunta, no dudes en <a href="contacto.html">contactarnos</a>.</p>
+        <h1>¡Bienvenido, <span id="userName"></span>!</h1>
+        <p>Tu cuenta ha sido creada correctamente.</p>
 
-        <!-- Botón para regresar a la página principal o inicio -->
-        <button onclick="window.location.href = 'index.html';">Volver al inicio</button>
+        <div class="info">
+            <p><strong>Nombre:</strong> <span id="name"></span></p>
+            <p><strong>Correo:</strong> <span id="email"></span></p>
+            <p><strong>Fecha de nacimiento:</strong> <span id="dob"></span></p>
+        </div>
+
+        <p>Hemos enviado un correo de confirmación a tu dirección de correo electrónico.</p>
+
+        <button onclick="window.location.href='index.html';">Volver al inicio</button>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener datos del usuario desde localStorage
+            const name = localStorage.getItem("fullName") || "Usuario";
+            const email = localStorage.getItem("email") || "No disponible";
+            const dob = localStorage.getItem("dateOfBirth") || "No proporcionada";
+
+            // Mostrar la información en la página
+            document.getElementById("userName").textContent = name;
+            document.getElementById("name").textContent = name;
+            document.getElementById("email").textContent = email;
+            document.getElementById("dob").textContent = dob;
+        });
+    </script>
 </body>
 </html>
