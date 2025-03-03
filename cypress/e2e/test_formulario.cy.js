@@ -101,6 +101,6 @@ describe('Formulario de Registro', () => {
     cy.url().should('include', 'confirmacion.html');
 
     // Optionally, you can assert that the confirmation page contains certain elements
-    cy.contains('¡Registro Exitoso!').should('be.visible');
+    cy.contains('¡REGISTRO EXITOSO!').should('be.visible');
   });
 });
