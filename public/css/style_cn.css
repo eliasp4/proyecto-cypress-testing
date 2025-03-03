@@ -1,0 +1,111 @@
+/* Estilos específicos para la página de confirmación */
+
+.confirmation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirmation-container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+  }
+  
+  .confirmation-content {
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-box {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+  
+  .info-item {
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .info-value {
+    color: #333;
+  }
+  
+  .confirmation-message {
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #333;
+  }
+  
+  @media (min-width: 768px) {
+    .info-item {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .info-label {
+      width: 40%;
+      margin-bottom: 0;
+    }
+  
+    .info-value {
+      width: 60%;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-height: 700px) {
+    .info-box {
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  
+    .confirmation-message {
+      margin: 1rem 0;
+    }
+  
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
