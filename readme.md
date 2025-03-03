@@ -124,7 +124,7 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 **Problema:** Al probar la validación del correo, Cypress detectaba un error en el formato.  
 ![Error validación de correo](cypress/screenshost/Imagen6.png)
 
-**Solución:** Se implementó un evento `'blur'` en el campo de correo electrónico dentro del JavaScript del formulario, asegurando que la validación se dispare correctamente cuando el usuario salga del campo.  
+**Solución:** Se implementó un evento \`'blur'\` en el campo de correo electrónico dentro del JavaScript del formulario, asegurando que la validación se dispare correctamente cuando el usuario salga del campo.  
 ![Validación correcta](cypress/screenshost/Imagen7.png)
 ![Validación correcta](cypress/screenshost/Imagen8.png)
 
@@ -134,12 +134,24 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 **Solución:** Se utilizaron *stubs* para simular y verificar las alertas, permitiendo validar su activación sin necesidad de interacción manual.
 
 ### 3. Redirección a la página de confirmación
-**Problema:** La prueba que validaba la redirección tras un registro exitoso fallaba porque Cypress no encontraba el texto `Registro Exitoso!` en la página de confirmación.  
+**Problema:** La prueba que validaba la redirección tras un registro exitoso fallaba porque Cypress no encontraba el texto `¡REGISTRO EXITOSO!` en la página de confirmación.  
 ![Error de redirección](cypress/screenshost/Imagen8.png)
 
-**Solución:** Se modificó el archivo `confirmacion.html`, agregando un `<h1>` con el texto `Registro Exitoso!`. Esto permitió que la validación se ejecutara correctamente. (Ademas le añadi un css similar al de la pagina de inscripcion)  
+**Solución:** Se modificó el archivo `confirmacion.html`, agregando un `<h1>` con el texto `¡REGISTRO EXITOSO!`. Esto permitió que la validación se ejecutara correctamente. (Ademas le añadi un css similar al de la pagina de inscripcion)  
 ![Redirección funcionando](cypress/screenshost/Imagen9.png)
 ![Redirección funcionando](cypress/screenshost/Imagen10.png)
+
+### 4. Validación de longitud del nombre
+**Problema:** La prueba de "Debería manejar valores límite y casos extremos" fallaba porque no había una validación para nombres demasiado largos.
+![Error de valor](cypress/screenshost/Imagen11.png)
+
+**Solución:** Se implementó una función `validateName` para verificar la longitud del nombre y se añadió la validación correspondiente en el evento 'blur' del campo de nombre y en la validación del formulario.
+![Validacion correcta](cypress/screenshost/Imagen12.png)
+
+### 5. Manejo de inyección de scripts
+**Problema:** La prueba de "Debería manejar intentos de inyección de scripts" fallaba porque el contenido del script se mostraba sin escapar en la página de confirmación.
+
+**Solución:** Se implementó una función de sanitización para escapar los caracteres especiales en el nombre antes de mostrarlo en la página de confirmación, previniendo así la ejecución de scripts maliciosos.
 
 ---
 
@@ -152,3 +164,18 @@ https://github.com/eliasp4/proyecto-cypress-testing/tree/main/cypress/screenshos
 Para ejecutar una prueba específica:
 
 npx cypress run --spec "cypress/e2e/test_formulario.cy.js"
+
+## Lecciones Aprendidas
+
+1. La importancia de implementar validaciones tanto en tiempo real (eventos 'blur') como en el envío del formulario.
+2. La necesidad de manejar casos extremos, como nombres muy largos o intentos de inyección de scripts.
+3. La utilidad de Cypress para simular interacciones del usuario y verificar el comportamiento del formulario en diferentes escenarios.
+4. La importancia de la sanitización de datos para prevenir vulnerabilidades de seguridad.
+
+## Mejoras Futuras
+
+1. Implementar validaciones del lado del servidor para mayor seguridad.
+2. Añadir más pruebas para cubrir casos de uso adicionales.
+3. Mejorar la accesibilidad del formulario para usuarios con discapacidades.
+4. Implementar internacionalización para soportar múltiples idiomas.
+
