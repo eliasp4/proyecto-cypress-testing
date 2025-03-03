@@ -137,7 +137,7 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 **Problema:** La prueba que validaba la redirección tras un registro exitoso fallaba porque Cypress no encontraba el texto `Registro Exitoso!` en la página de confirmación.  
 ![Error de redirección](cypress/screenshost/Imagen8.png)
 
-**Solución:** Se modificó el archivo `confirmacion.html`, agregando un `<h1>` con el texto `Registro Exitoso!`. Esto permitió que la validación se ejecutara correctamente.  
+**Solución:** Se modificó el archivo `confirmacion.html`, agregando un `<h1>` con el texto `Registro Exitoso!`. Esto permitió que la validación se ejecutara correctamente. (Ademas le añadi un css similar al de la pagina de inscripcion)  
 ![Redirección funcionando](cypress/screenshost/Imagen9.png)
 ![Redirección funcionando](cypress/screenshost/Imagen10.png)
 
