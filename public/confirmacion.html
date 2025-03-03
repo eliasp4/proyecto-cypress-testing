@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación de Registro - Massimo Dutti</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_cn.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Left side - Image -->
+    <div class="image-section">
+      <button class="back-button" onclick="window.location.href='index.html';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m12 19-7-7 7-7" />
+          <path d="M19 12H5" />
+        </svg>
+      </button>
+      <img src="/portada.jpg" alt="Modelo con jersey y camisa" class="cover-image">
+      <div class="brand-name">Massimo Dutti</div>
+    </div>
+
+    <!-- Right side - Confirmation -->
+    <div class="form-section confirmation-section">
+      <div class="confirmation-container">
+        <h1>¡REGISTRO EXITOSO!</h1>
+        
+        <div class="confirmation-content">
+          <h3>¡Bienvenido, <span id="userName"></span>!</h3>
+          <p>Tu cuenta ha sido creada correctamente.</p>
+
+          <div class="info-box">
+            <div class="info-item">
+              <span class="info-label">Nombre:</span>
+              <span id="name" class="info-value"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Correo:</span>
+              <span id="email" class="info-value"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Fecha de nacimiento:</span>
+              <span id="dob" class="info-value"></span>
+            </div>
+          </div>
+
+          <p class="confirmation-message">Hemos enviado un correo de confirmación a tu dirección de correo electrónico.</p>
+
+          <button onclick="window.location.href='index.html';" class="submit-button">VOLVER AL INICIO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/funcionalidades_cn.js"></script>
+</body>
+</html>
+
