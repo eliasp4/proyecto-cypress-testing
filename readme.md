@@ -146,6 +146,7 @@ Después de un registro exitoso, el usuario es redirigido a una página de confi
 ![Error de valor](cypress/screenshost/Imagen11.png)
 
 **Solución:** Se implementó una función `validateName` para verificar la longitud del nombre y se añadió la validación correspondiente en el evento 'blur' del campo de nombre y en la validación del formulario.
+![Validacion correcta](cypress/screenshost/Imagen13.png)
 ![Validacion correcta](cypress/screenshost/Imagen12.png)
 
 ### 5. Manejo de inyección de scripts
